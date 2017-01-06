@@ -4,6 +4,12 @@
   "name": "shipit",
   "description": "i'm on a boat",
   "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/amplitude/deploy/pull/*"],
+      "js": ["myscript.js"]
+    }
+  ],
 
   "browser_action": {
     "default_icon": "icon.png",
