@@ -1,9 +1,5 @@
-//document.getElementById('new_comment_field').value = 'PUT BOAT HERE';
-
-//function boatIt() {
-//    document.getElementById('new_comment_field').value = 'YOU ON A BOAT'
-//}
-
+// Adds a button next to comment
+// The button when clicked, adds a ship ascii art to the comment
 orig_button = document.getElementById('partial-new-comment-form-actions').innerHTML
 
 ship_button = '<button type="button" id="boatButton" class="btn btn-primary" data-disable-with="" data-disable-invalid="">BOAT!</button>'
