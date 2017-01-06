@@ -2,21 +2,19 @@
   "manifest_version": 2,
 
   "name": "shipit",
-  "description": "i'm on a boat",
+  "description": put a boat on it",
   "version": "1.0",
   "content_scripts": [
     {
-      "matches": ["https://github.com/amplitude/deploy/pull/*"],
-      "js": ["myscript.js"]
+      "matches": ["https://github.com/*/pull/*"],
+      "js": ["boatbutton.js"]
     }
   ],
 
   "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_icon": "icon.png"
   },
   "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
+    "https://github.com/*/pull/*"
   ]
 }
